@@ -1,0 +1,13 @@
+name: docker-compose-practice
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  welcome:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Welcome message
+        run: echo "Hello KELY! Your first GitHub Actions workflow is running."
