@@ -12,5 +12,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Validate Docker Compose
+        run: docker compose config --quiet
+
       - name: Welcome message
         run: echo "Hello KELY! Your first GitHub Actions workflow is running."
