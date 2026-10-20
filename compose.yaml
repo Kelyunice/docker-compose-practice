@@ -6,7 +6,7 @@ services:
 
   app:
     build: .
-    image: docker-compose-app:1.0
+    image: ${APP_IMAGE:-docker-compose-app:1.0}
     ports:
       - "3002:3000"
     depends_on:
