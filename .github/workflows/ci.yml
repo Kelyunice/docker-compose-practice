@@ -30,7 +30,7 @@ jobs:
           context: .
           push: true
           tags: | 
-            kelyunice1419/docker-compose-app:1.0 
+            kelyunice1419/docker-compose-app:2.0 
             kelyunice1419/docker-compose-app:${{ github.sha }} 
 
       - name: Welcome message
