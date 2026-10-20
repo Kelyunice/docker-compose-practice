@@ -18,7 +18,7 @@ async function startApp() {
             const visits = await redisClient.incr('visits');
 
             res.writeHead(200, { 'Content-Type': 'text/html' });
-            res.end(`<h1>Hello from KELY!</h1><p>Visits: ${visits}</p><p>Environment: ${appEnv}</p>`);
+            res.end(`<h1>Making Progress In DevOps Skills</h1><p>Visits: ${visits}</p><p>Environment: ${appEnv}</p>`);
         } catch (err) {
             console.error('Request error:', err);
             res.writeHead(500);

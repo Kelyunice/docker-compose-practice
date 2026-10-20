@@ -14,6 +14,9 @@ jobs:
 
       - name: Validate Docker Compose
         run: docker compose config --quiet
+      
+      - name: Build Docker image
+        run: docker build -t docker-compose-app:1.0 .
 
       - name: Welcome message
         run: echo "Hello KELY! Your first GitHub Actions workflow is running."
